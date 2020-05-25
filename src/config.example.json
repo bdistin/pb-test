@@ -1,0 +1,5 @@
+{
+    "token": "your bot token",
+    "idle": 100000,
+    "id": "your discord user id"
+}
