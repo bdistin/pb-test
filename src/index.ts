@@ -1,11 +1,12 @@
 import { Client, ClientEvents, Message } from '@klasa/core';
+import { Intents } from '@klasa/ws';
 import { EventIterator } from '@klasa/event-iterator';
 import { commands } from './commands';
 import * as config from './config.json';
 
 const { token, idle, id } = config;
 
-const client = new Client({ rest: { offset: 0 } })
+const client = new Client({ ws: { intents: Intents.DEFAULT_WITH_MEMBERS }, rest: { offset: 0 } })
 	.on(ClientEvents.Debug, console.log)
 	.on(ClientEvents.WTF, console.log)
 	.on(ClientEvents.EventError, console.log);

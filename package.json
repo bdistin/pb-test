@@ -11,7 +11,8 @@
   "dependencies": {
     "@klasa/core": "dirigeants/core#build",
     "@klasa/event-iterator": "^0.0.8",
-    "@klasa/utils": "^0.0.5"
+    "@klasa/utils": "^0.0.5",
+    "@klasa/ws": "^0.0.12"
   },
   "devDependencies": {
     "@klasa/dapi-types": "^0.1.1",

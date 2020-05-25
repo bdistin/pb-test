@@ -10,7 +10,13 @@ export const commands: Record<string, (message: Message, args: string[]) => Prom
 	},
 
 	async eval(message: Message, args: string[]) {
-		return message.channel.send(async (mb) => mb.setContent(`\`\`\`js\n${inspect(await eval(args.join(' ')), { depth: 0 })}\n\`\`\``));
+		let returned: unknown;
+		try {
+			returned = await eval(args.join(' '));
+		} catch (error) {
+			returned = error;
+		}
+		return message.channel.send(async (mb) => mb.setContent(`\`\`\`\n${inspect(returned, { depth: 0 })}\n\`\`\``));
 	},
 
 	info(message: Message) {
