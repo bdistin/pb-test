@@ -16,7 +16,7 @@ export const commands: Record<string, (message: Message, args: string[]) => Prom
 		} catch (error) {
 			returned = error;
 		}
-		return message.channel.send(async (mb) => mb.setContent(`\`\`\`\n${inspect(returned, { depth: 0 })}\n\`\`\``), { prepend: '```\n', append: '```' });
+		return message.channel.send(async (mb) => mb.setContent(`\`\`\`\n${inspect(returned, { depth: 0 })}\n\`\`\``), { prepend: '```\n', append: '\n```' });
 	},
 
 	info(message: Message) {
