@@ -10,14 +10,11 @@
   "author": "bdistin",
   "dependencies": {
     "@klasa/core": "dirigeants/core#build",
-    "@klasa/event-iterator": "^0.0.8",
+    "@klasa/event-iterator": "^0.0.10",
     "@klasa/utils": "^0.0.5"
   },
   "devDependencies": {
-    "@klasa/dapi-types": "^0.1.1",
     "@types/node": "^14.0.5",
-    "@types/node-fetch": "^2.5.7",
-    "@types/ws": "^7.2.4",
     "eslint": "^7.1.0",
     "eslint-config-klasa": "dirigeants/klasa-lint",
     "typescript": "^3.9.3"

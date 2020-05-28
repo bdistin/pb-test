@@ -16,7 +16,7 @@ client.token = token;
 
 client.connect()
 	.then(async () => {
-		for await (const message of new EventIterator<Message>(client, ClientEvents.MessageCreate, { idle: idle || Infinity, filter: msg => msg.author.id === id })) {
+		for await (const [message] of new EventIterator<[Message]>(client, ClientEvents.MessageCreate, { idle: idle || Infinity, filter: ([msg]) => msg.author.id === id })) {
 			const split = message.content.split(' ');
 			const command = split.shift();
 			if (Reflect.has(commands, command!)) {

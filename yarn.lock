@@ -45,22 +45,30 @@
 
 "@klasa/core@dirigeants/core#build":
   version "0.0.3"
-  resolved "https://codeload.github.com/dirigeants/core/tar.gz/01eb19229b7e254660c7a929e59121bb8b8efb46"
+  resolved "https://codeload.github.com/dirigeants/core/tar.gz/6bf9c0d9ed25c9de1af71ca43f30c5024674c063"
   dependencies:
     "@klasa/bitfield" "^0.0.2"
     "@klasa/cache" "^0.0.3"
+    "@klasa/dapi-types" "^0.1.1"
     "@klasa/event-iterator" "^0.0.8"
     "@klasa/rest" "^0.4.0"
     "@klasa/snowflake" "^0.0.1"
     "@klasa/timer-manager" "^0.0.1"
     "@klasa/utils" "^0.0.8"
     "@klasa/ws" "^0.0.12"
+    "@types/node" "^14.0.0"
+    "@types/node-fetch" "^2.5.7"
     fs-nextra "^0.5.1"
 
 "@klasa/dapi-types@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@klasa/dapi-types/-/dapi-types-0.1.1.tgz#f207d58d9ff878598ea01c8c11aeece598cce726"
   integrity sha512-mTCTF7LxNFVewULTEaewlf+MpTYsGWKlkwHgmOqdw4HeS5OlQrRmeoWwg2drgjhXrdbYnXBV6s3LsiESqKIoAg==
+
+"@klasa/event-iterator@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@klasa/event-iterator/-/event-iterator-0.0.10.tgz#9805297be51ccb5767d31f700957ddb79ec4855b"
+  integrity sha512-AUr8d9+4YeHN2/b1C8EVSZTfLut/+j2u8zcrKRt3BFP5kxdHSg+RSOJ7wP+gQ0dvrVZMQNwbIg/xFVr9G1EsLA==
 
 "@klasa/event-iterator@^0.0.8":
   version "0.0.8"
@@ -134,17 +142,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^14.0.5":
+"@types/node@*", "@types/node@^14.0.0", "@types/node@^14.0.5":
   version "14.0.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.5.tgz#3d03acd3b3414cf67faf999aed11682ed121f22b"
   integrity sha512-90hiq6/VqtQgX8Sp0EzeIsv3r+ellbGj4URKj5j30tLlZvRUpnAe9YbYnjl3pJM93GyXU0tghHhvXHq+5rnCKA==
-
-"@types/ws@^7.2.4":
-  version "7.2.4"
-  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-7.2.4.tgz#b3859f7b9c243b220efac9716ec42c716a72969d"
-  integrity sha512-9S6Ask71vujkVyeEXKxjBSUV8ZUB0mjL5la4IncBoheu04bDaYyUKErh1BQcY9+WzOUOiKqz/OnpJHYckbMfNg==
-  dependencies:
-    "@types/node" "*"
 
 abort-controller@^3.0.0:
   version "3.0.0"
